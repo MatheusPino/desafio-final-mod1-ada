@@ -20,12 +20,12 @@
 }
 
 .height-card {
-  min-height: 256px;
+  min-height: 320px;
 }
 
 
 .centraliza-section {
-  margin: auto;
+  margin: 0 auto;
 }
 
 .display-5 {
@@ -45,14 +45,14 @@
 }
 
 .tam-lg {
-  height: 5vw;
+  height: 4vw;
   min-height: 32px;
 }
 
 .bg-black-opc {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.45);
   border-radius: 48px;
-  padding: 4px 24px 4px 24px;
+  padding: 100vh 100vw;
 }
 
 .flex {
@@ -106,6 +106,12 @@
   animation: none;
 }
 
+.card-hover:hover {
+  transform: scale(1.05); /* Aumenta um pouco o tamanho do card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma leve sombra */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+}
+
 @keyframes blink {
   0% {
     background-color: #ccc;
@@ -131,6 +137,14 @@
 
 @media (min-width: 1025px) {
 
+  main {
+    margin: 0 96px 0 96px;
+  }
+
+  .height-card {
+    min-height: 400px;
+  }
+
   .table-custom {
     width: 800px;
   }
@@ -139,18 +153,28 @@
     margin-right: 64px;
   }
 
-  .bg-black-opc {
-    padding: 8px 96px 8px 96px;
-  }
-
   .mar-bottom {
     margin-bottom: 96px;
   }
 
+  .titulo-slide {
+    font-size: 5em;
+  }
+
 }
 
-@media (max-width: 576px){
-  .esconder-div{
+@media (max-width: 576px) {
+  .esconder-div {
     display: none;
   }
+
+  .card-text {
+    font-size: 0.8em;
+  }
+
+  .card-title {
+    font-size: 0.95em;
+  }
+
+
 }
