@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+			integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<title>Document</title>
+	</head>
+
+	<body>
+		<header>
+			<section class="shadow">
+				<nav class="navbar navbar-expand-lg navbar-dark bg-red-prim fixed-top shadow">
+					<figure class="ml-3 mt-3">
+						<a class="navbar-brand" href="#">
+							<img src="./assets/ifood-logo-bran-gran-9800797.png" alt="" class="tam-lg">
+						</a>
+					</figure>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+						aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav alinha-direita ms-auto">
+							<li class="nav-item">
+								<a class="nav-link active" href="#">Início</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Sobre</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Contato</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+
+			</section>
+		</header>
+		<main>
+
+			<section class=" mar-bottom mar-top carrossel ">
+				<div id="cardCarousel" class="carousel slide mar-bottom " data-bs-ride="carousel">
+					<!-- Indicadores -->
+					<ol class="carousel-indicators position-absolute bottom-0">
+						<li data-bs-target="#cardCarousel" data-bs-slide-to="0" class="active"></li>
+						<li data-bs-target="#cardCarousel" data-bs-slide-to="1"></li>
+						<li data-bs-target="#cardCarousel" data-bs-slide-to="2"></li>
+					</ol>
+
+					<!-- Slides do carrossel -->
+					<div class="carousel-inner shadow-lg carousel-fade ">
+						<!-- Slide 1 -->
+						<div class="carousel-item active ">
+							<div class="card sem-borda">
+								<img src="./assets/carne-e-legumes-grelhados-em-espetos-rusticos-gerados-por-ia2.jpg"
+									class="tm-imgcard-img-top" alt="Imagem 1">
+								<div class="card-body mar-bottom position-absolute top-50 start-50 translate-middle">
+									<h5 class="card-title text-light display-5 font-weight-bold bg-black-opc">Carnes</h5>
+								</div>
+							</div>
+						</div>
+
+						<!-- Slide 2 -->
+						<div class="carousel-item">
+							<div class="card sem-borda">
+								<img src="./assets/deliciosa-massa-no-prato.jpg" class="card-img-top" alt="Imagem 2">
+								<div class="card-body mar-bottom position-absolute top-50 start-50 translate-middle">
+									<h5 class="card-title text-light display-5 font-weight-bold bg-black-opc">Massas</h5>
+								</div>
+							</div>
+						</div>
+
+						<!-- Slide 3 -->
+						<div class="carousel-item">
+							<div class="card sem-borda">
+								<img src="./assets/pexels-foodie-factor-539451.jpg" class="card-img-top" alt="Imagem 3">
+								<div class="card-body mar-bottom position-absolute top-50 start-50 translate-middle">
+									<h5 class="card-title text-light display-5 font-weight-bold bg-black-opc">Sopas</h5>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Controles do carrossel -->
+					<button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Anterior</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#cardCarousel" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Próximo</span>
+					</button>
+				</div>
+			</section>
+
+			<section class="container-texto mar-bottom">
+				<p>Ifood é <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+			</section>
+
+			<div class="linha-div"></div>
+
+			</section>
+
+			<!-- secção de cardápio -->
+			<section class="container mar-bottom">
+				<div class="container centraliza-section">
+					<h3 class="display-5">Cardápio</h3>
+					<div class="row centraliza-section">
+						<div class="col-6 col-md-4 col-lg-3">
+							<div class="card mb-card height-card shadow">
+								<img src="./assets/prato1.jpg" class="card-img-top img-sqr" alt="Imagem do prato">
+								<div class="card-body shadow-up">
+									<h5 class="card-title">primeiro Prato</h5>
+									<p class="card-text">Descrição do prato.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-6 col-md-4 col-lg-3">
+							<div class="card mb-card height-card shadow">
+								<img src="./assets/prato4.jpg" class="card-img-top" alt="Imagem do prato">
+								<div class="card-body  shadow-up">
+									<h5 class="card-title">Nome do prato</h5>
+									<p class="card-text">Descrição do prato.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-6 col-md-4 col-lg-3">
+							<div class="card mb-card height-card shadow">
+								<img src="./assets/prato5.jpg" class="card-img-top" alt="Imagem do prato">
+								<div class="card-body  shadow-up">
+									<h5 class="card-title">Nome do Prato</h5>
+									<p class="card-text">Descrição do prato.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-6 col-md-4 col-lg-3">
+							<div class="card mb-card height-card shadow">
+								<img src="./assets/prato2.jpg" class="card-img-top" alt="Imagem do prato">
+								<div class="card-body shadow-up">
+									<h5 class="card-title">Nome do prato</h5>
+									<p class="card-text">Descrição do prato.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-6 col-md-4 col-lg-3">
+							<div class="card mb-card height-card shadow">
+								<img src="./assets/prato3.jpg" class="card-img-top" alt="Imagem do prato">
+								<div class="card-body shadow-up">
+									<h5 class="card-title">Nome do Prato</h5>
+									<p class="card-text">Descrição do prato.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-6 col-md-4 col-lg-3">
+							<div class="card mb-card height-card shadow">
+								<img src="./assets/prato6.jpg" class="card-img-top" alt="Imagem do prato">
+								<div class="card-body shadow-up">
+									<h5 class="card-title">Nome do prato</h5>
+									<p class="card-text">Descrição do prato.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-6 col-md-4 col-lg-3">
+							<div class="card mb-card height-card shadow">
+								<img src="./assets/prato7.jpg" class="card-img-top" alt="Imagem do prato">
+								<div class="card-body shadow-up">
+									<h5 class="card-title">Nome do Prato</h5>
+									<p class="card-text">Descrição do prato.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-6 col-md-4 col-lg-3">
+							<div class="card mb-card height-card shadow">
+								<img src="./assets/prato8.jpg" class="card-img-top" alt="Imagem do prato">
+								<div class="card-body shadow-up">
+									<h5 class="card-title">Nome do prato</h5>
+									<p class="card-text">Descrição do prato.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="linha-div"></div>
+
+			<section class="container mar-bottom">
+				<h3 class="display-5">Restaurantes</h3>
+				<table class="shadow table table-borderless table-hover table-responsive m-auto table-custom">
+					<thead>
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">Primeiro</th>
+							<th scope="col">Último</th>
+							<th scope="col">Nickname</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>
+								<figure>
+									<img src="./assets/logo-ifood-1024.png" width="32px" alt="">
+								</figure>
+							</th>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@mdo</td>
+						</tr>
+						<tr>
+							<th>
+								<figure>
+									<img src="./assets/logo-ifood-1024.png" width="32px" alt="">
+								</figure>
+							</th>
+							<td class="col-5">Jacob</td>
+							<td class="col-5">Thornton</td>
+							<td class="col-3">@fat</td>
+						</tr>
+						<tr>
+							<th>
+								<figure>
+									<img src="./assets/logo-ifood-1024.png" width="32px" alt="">
+								</figure>
+							</th>
+							<td colspan="2" class="col-4">Larry the Bird</td>
+							<td>@twitter</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<div class="linha-div"></div>
+
+			<section class="container mar-bottom">FAZER FORMULARIO</section>
+		</main>
+		<footer class="bg-red-prim text-white text-center p-3 shadow-up">
+			<div class="container">
+				<p>
+					&copy; Copyright 2021 - iFood - Todos os direitos reservados iFood com Agência de Restaurantes Online S.A.
+				</p>
+				<address>
+					<a class="text-white"
+						href="https://www.google.com/maps/place/iFood/@-23.5407899,-46.7675348,15z/data=!4m6!3m5!1s0x94ceff51e6b69ded:0xefc96bcaa47ca246!8m2!3d-23.5407899!4d-46.7675348!16s%2Fg%2F11fm5s7xrz?entry=ttu">
+						Avenida dos Autonomistas, nº 1496, Vila Yara, Osasco/SP - CEP 06.020-902
+					</a>
+				</address>
+				<div>
+					<a class="text-white" href="https://privacidade.ifood.com.br/privacidade-clientes/">Política de
+						Privacidade</a> | <a class="text-white" href="https://webmiddleware.ifood.com.br/termos?">Termos de
+						Serviço</a>
+				</div>
+
+			</div>
+		</footer>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+			integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+			crossorigin="anonymous"></script>
+		<script>const typedTextSpan = document.querySelector(".typed-text");
+			const cursorSpan = document.querySelector(".cursor");
+
+			const textArray = ["RÁPIDO.", "PRÁTICO.", "VIDA!"];
+			const typingDelay = 100;
+			const erasingDelay = 50;
+			const newTextDelay = 1500; // Delay between current and next text
+			let textArrayIndex = 0;
+			let charIndex = 0;
+
+			function type() {
+				if (charIndex < textArray[textArrayIndex].length) {
+					if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+					typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+					charIndex++;
+					setTimeout(type, typingDelay);
+				}
+				else {
+					cursorSpan.classList.remove("typing");
+					setTimeout(erase, newTextDelay);
+				}
+			}
+
+			function erase() {
+				if (charIndex > 0) {
+					if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+					typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
+					charIndex--;
+					setTimeout(erase, erasingDelay);
+				}
+				else {
+					cursorSpan.classList.remove("typing");
+					textArrayIndex++;
+					if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+					setTimeout(type, typingDelay + 1100);
+				}
+			}
+
+			document.addEventListener("DOMContentLoaded", function () { // On DOM Load initiate the effect
+				if (textArray.length) setTimeout(type, newTextDelay + 250);
+			});</script>
+	</body>
+
+</html>
