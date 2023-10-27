@@ -2,27 +2,19 @@
   --cor-primaria: #D51822;
 }
 
-.linha-div {
-  background: linear-gradient(to right, #d5182227, #d5182267, #d5182227);
-  height: 1px;
-  width: 70vw;
-  margin: auto;
+/* --------- Margens ---------- */
+.mar-bottom {
   margin-bottom: 64px;
 }
 
+.mar-top {
+  margin: 90px 0 0 0;
 
-.mar-bottom {
-  margin-bottom: 64px;
 }
 
 .mb-card {
   margin-bottom: 32px;
 }
-
-.height-card {
-  min-height: 320px;
-}
-
 
 .centraliza-section {
   margin: 0 auto;
@@ -32,22 +24,11 @@
   margin-bottom: 32px;
 }
 
-.alinha-direita {
-  align-items: end;
-}
-
+/* --------- Backgrounds ---------- */
 .bg-red-prim {
   background-color: var(--cor-primaria);
 }
 
-.bg-red-sec {
-  background-color: var(--cor-quinta);
-}
-
-.tam-lg {
-  height: 4vw;
-  min-height: 32px;
-}
 
 .bg-black-opc {
   background-color: rgba(0, 0, 0, 0.45);
@@ -55,19 +36,21 @@
   padding: 100vh 100vw;
 }
 
-.flex {
-  display: flex;
+/* --------- Alturas ---------- */
+.tam-lg {
+  height: 4vw;
+  min-height: 32px;
 }
 
-.header-custom {
-  margin-bottom: 0;
+.height-card {
+  min-height: 320px;
 }
 
-.mar-top {
-  margin: 90px 0 0 0;
-
+.alinha-direita {
+  align-items: end;
 }
 
+/* --------- Borda zero ---------- */
 .sem-borda {
   border: none !important;
   outline: none !important;
@@ -75,6 +58,17 @@
   margin-left: 0;
 }
 
+/* --------- Linha de divisão ---------- */
+.linha-div {
+  background: linear-gradient(to right, #d5182227, #d5182267, #d5182227);
+  height: 1px;
+  width: 70vw;
+  margin: auto;
+  margin-bottom: 64px;
+}
+
+
+/* --------- Estilo dos Cards ---------- */
 .container-texto {
   height: 90px;
   display: flex;
@@ -107,11 +101,31 @@
 }
 
 .card-hover:hover {
-  transform: scale(1.05); /* Aumenta um pouco o tamanho do card */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma leve sombra */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+  transform: scale(1.05);
+  /* Aumenta um pouco o tamanho do card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Adiciona uma leve sombra */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Transição suave */
 }
 
+/* --------- Barra de Pesquisa ---------- */
+.form-focus-custom:focus {
+  border-color: rgb(251, 255, 7) !important;
+  box-shadow: 0 0 0 0.1rem rgba(251, 255, 7, 0.733) !important;
+}
+
+.bg-btn-focus:hover {
+  background-color: rgb(173, 0, 0) !important;
+}
+
+
+.btn-outline-light, .navbar-toggler {
+  border-color: #ffffff3b !important;
+}
+
+
+/* --------- css da animação ---------- */
 @keyframes blink {
   0% {
     background-color: #ccc;
@@ -134,7 +148,7 @@
   }
 }
 
-
+/* --------- Media queries ---------- */
 @media (min-width: 1025px) {
 
   main {
@@ -160,7 +174,6 @@
   .titulo-slide {
     font-size: 5em;
   }
-
 }
 
 @media (max-width: 576px) {
@@ -175,6 +188,4 @@
   .card-title {
     font-size: 0.95em;
   }
-
-
 }
