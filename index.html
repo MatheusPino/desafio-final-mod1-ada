@@ -46,10 +46,10 @@
 							</li>
 							<!-- Itens de nav -->
 							<li class="nav-item ml-4">
-								<a class="nav-link active" href="#">Início</a>
+								<a class="nav-link active" href="#">Cardápio</a>
 							</li>
 							<li class="nav-item ml-3">
-								<a class="nav-link" href="#">Cardápio</a>
+								<a class="nav-link" href="#">Restaurantes</a>
 							</li>
 							<li class="nav-item ml-3">
 								<a class="nav-link" href="#">Contato</a>
@@ -256,9 +256,34 @@
 			</section>
 
 			<div class="linha-div"></div>
+
 			<!-- Formulario -->
-			<section class="container mar-bottom">FAZER FORMULARIO</section>
+			<section class="container mt-5 mar-bottom">
+				<div class="card text-center mx-5 shadow-lg card-form mx-auto" style="border-radius: 25px;">
+					<div class="card-body my-4">
+						<h5 class="card-title font-lg">Dúvidas ou sugestões?</h5>
+						<p class="card-text">Clique aqui para nos enviar uma mensagem.</p>
+						<button class="shadow" id="openFormButton" onclick="openForm()">Contato</button>
+
+						<div id="overlay" class="overlay">
+							<div id="formContainer" class="form-container">
+								<span id="closeForm" class="close-button" onclick="closeForm()">&times;</span>
+								<h2>Formulário de Contato</h2>
+								<form>
+									<!-- Seus campos de formulário aqui -->
+									<label for="name">Nome:</label>
+									<input type="text" id="name" name="name">
+									<!-- Outros campos do formulário -->
+									<button type="submit">Enviar</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
+
+		<!-- Footer -->
 		<footer class="bg-red-prim text-white text-center p-3 shadow-up">
 			<div class="container">
 				<p>
@@ -269,11 +294,12 @@
 						href="https://www.google.com/maps/place/iFood/@-23.5407899,-46.7675348,15z/data=!4m6!3m5!1s0x94ceff51e6b69ded:0xefc96bcaa47ca246!8m2!3d-23.5407899!4d-46.7675348!16s%2Fg%2F11fm5s7xrz?entry=ttu">
 						Avenida dos Autonomistas, nº 1496, Vila Yara, Osasco/SP - CEP 06.020-902
 					</a>
+					<a class="text-white" href="tel:+5511963909392">| SAC: 00 55 11 96390-9392</a>
 				</address>
 				<div>
 					<a class="text-white" href="https://privacidade.ifood.com.br/privacidade-clientes/">Política de
 						Privacidade</a> | <a class="text-white" href="https://webmiddleware.ifood.com.br/termos?">Termos de
-						Serviço</a>
+						Serviço |</a>
 				</div>
 
 			</div>

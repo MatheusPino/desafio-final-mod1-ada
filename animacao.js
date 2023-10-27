@@ -39,3 +39,11 @@ function erase() {
 document.addEventListener("DOMContentLoaded", function () { // On DOM Load initiate the effect
   if (textArray.length) setTimeout(type, newTextDelay + 250);
 });
+
+function openForm() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("overlay").style.display = "none";
+}
