@@ -47,3 +47,45 @@ function openForm() {
 function closeForm() {
   document.getElementById("overlay").style.display = "none";
 }
+
+
+//--------------Arrumando scroll------------------
+
+const links = document.querySelectorAll('.scroll-link');
+
+links.forEach(link => {
+  link.addEventListener('click', scrollToElement);
+});
+
+function scrollToElement(e) {
+  e.preventDefault();
+  const targetId = this.getAttribute('href').substring(1); // Remove o caractere '#' da âncora
+  const targetElement = document.getElementById(targetId);
+
+  if (targetElement) {
+    const offset = 120; // Ajuste da altura
+    const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - offset;
+
+    window.scrollTo({
+      top: targetPosition,
+      behavior: 'smooth',
+    });
+  }
+}
+
+// --------------- Arrumando active de nav ---------------
+$(document).ready(function () {
+  $('.nav-link').on('click', function () {
+    // Remove a classe "active" de todos os itens de navegação
+    $('.nav-link').removeClass('active');
+
+    // Adiciona a classe "active" ao item de navegação clicado
+    $(this).addClass('active');
+  });
+});
+
+
+//----------- Mensagem ao submeter form ---------------
+function onSubmit() {
+  alert('Mensagem enviada com sucesso! Aguarde que em breve receberá uma resposta em seu e-mail.')
+}

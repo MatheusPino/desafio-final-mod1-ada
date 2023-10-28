@@ -2,6 +2,10 @@
   --cor-primaria: #D51822;
 }
 
+.semi-bold {
+  font-weight: 500;
+}
+
 /* --------- Margens ---------- */
 .mar-bottom {
   margin-bottom: 64px;
@@ -29,6 +33,10 @@
   margin-top: 96px;
 }
 
+.border-radius {
+  border-radius: 8px;
+}
+
 /* --------- Backgrounds ---------- */
 .bg-red-prim {
   background-color: var(--cor-primaria) !important;
@@ -54,9 +62,6 @@
   min-height: 32px;
 }
 
-.height-card {
-  min-height: 360px;
-}
 
 .alinha-direita {
   align-items: end;
@@ -80,7 +85,7 @@
 }
 
 
-/* --------- Estilo dos Cards ---------- */
+/* --------- Estilo dos Cards Cardápio ---------- */
 .container-texto {
   height: 90px;
   display: flex;
@@ -118,6 +123,10 @@
   padding-bottom: 32px;
 }
 
+.height-card {
+  min-height: 400px;
+}
+
 .card-hover:hover {
   transform: scale(1.05);
   /* Aumenta um pouco o tamanho do card */
@@ -143,29 +152,24 @@
   border-color: #ffffff3b !important;
 }
 
-.form-container-size{
-  margin-top: 9vh;
-  margin-bottom: 5vh;
-  width: 70vw;
-  max-width: 600px;
-  height: 78vh;
-}
-
 .form-label {
   text-align: left !important;
 }
 
 /* --------- Tabela ---------- */
-.tam-tabela{
-  max-height: 360px; overflow-y: auto;
+.tam-tabela {
+  max-height: 360px;
+  overflow-y: auto;
 }
 
-.fixa-linha{
+.fixa-linha {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background-color: #fff; /* Cor de fundo para destacar a primeira linha */
-  z-index: 1; /* Para garantir que fique na parte superior */
+  background-color: #fff;
+  /* Cor de fundo para destacar a primeira linha */
+  z-index: 1;
+  /* Para garantir que fique na parte superior */
 }
 
 /* --------- Card pro formulário ---------- */
@@ -225,6 +229,15 @@ button#openFormButton {
   border: solid 2px #d5182267 !important;
 }
 
+.form-container-size {
+  margin-top: 7vh;
+  margin-bottom: 5vh;
+  width: 70vw;
+  max-width: 600px;
+  height: 78vh;
+}
+
+
 /* --------- css da animação ---------- */
 @keyframes blink {
   0% {
@@ -256,7 +269,7 @@ button#openFormButton {
   }
 
   .height-card {
-    min-height: 420px;
+    min-height: 480px;
   }
 
   .table-custom {
@@ -287,5 +300,9 @@ button#openFormButton {
 
   .card-title {
     font-size: 0.95em;
+  }
+
+  .font-sm {
+    font-size: 14px;
   }
 }
