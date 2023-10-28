@@ -87,5 +87,5 @@ $(document).ready(function () {
 
 //----------- Mensagem ao submeter form ---------------
 function onSubmit() {
-  alert('Mensagem enviada com sucesso! Aguarde que em breve receberá uma resposta em seu e-mail.')
+  alert('Mensagem enviada com sucesso!')
 }
